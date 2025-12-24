@@ -43,23 +43,36 @@
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@types/node": "^24.10.4",
 		"@vitest/browser-playwright": "^4.0.16",
+		"@yushijinhun/three-minifier-rollup": "^0.4.0",
 		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.1",
 		"globals": "^16.5.0",
+		"mdsvex": "^0.12.6",
 		"playwright": "^1.57.0",
 		"prettier": "^3.7.4",
 		"prettier-plugin-svelte": "^3.4.1",
 		"publint": "^0.3.16",
-		"svelte": "^5.46.0",
-		"svelte-check": "^4.3.4",
+		"svelte": "^5.46.1",
+		"svelte-check": "^4.3.5",
 		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.50.0",
+		"typescript-eslint": "^8.50.1",
 		"vite": "^7.3.0",
 		"vitest": "^4.0.16",
 		"vitest-browser-svelte": "^2.0.1"
 	},
 	"keywords": [
 		"svelte"
-	]
+	],
+	"dependencies": {
+		"@csstools/normalize.css": "^12.1.1",
+		"@threlte/core": "^8.3.1",
+		"@threlte/extras": "^9.7.1",
+		"@threlte/xr": "^1.2.0",
+		"@types/qrcode": "^1.5.6",
+		"@types/three": "^0.182.0",
+		"qrcode": "^1.5.4",
+		"three": "^0.182.0",
+		"zod": "^4.2.1"
+	}
 }

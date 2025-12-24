@@ -1,0 +1,21 @@
+<script lang="ts">
+	import type { HTMLAttributes } from 'svelte/elements';
+
+	let { ...props }: HTMLAttributes<SVGElement> = $props();
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="32"
+	height="32"
+	viewBox="0 0 32 32"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="2"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	data-icon="x"
+	{...props}
+>
+	<path d="M18 6 6 18" /><path d="m6 6 12 12" />
+</svg>

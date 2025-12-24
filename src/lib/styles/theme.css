@@ -1,0 +1,38 @@
+:root {
+	--color-foreground: black;
+	--color-background: rgb(245, 248, 250);
+	--color-alt-foreground: lightgrey;
+	--color-alt-background: lightgrey;
+	--color-input-foreground: rgb(20, 25, 30);
+	--color-input-background: rgba(120, 125, 150, 0.2);
+	--color-primary: rgb(0, 110, 185);
+	--color-secondary: rgb(0, 180, 235);
+	--color-succes: green;
+	--color-notice: yellow;
+	--color-warning: orange;
+	--color-error: red;
+
+	--font-main: 'Inter', sans-serif;
+
+	--spacing-input-size: 3em;
+	--spacing-input-padding-inline: 1.25em;
+	--spacing-input-nesting: 0.25em;
+	--spacing-input-icon-size: 1em;
+	--spacing-input-group-gap: 0.1em;
+	--spacing-menu-padding: 0.5em;
+	--spacing-menu-gap: var(--stroke-thickness-focus);
+
+	--stroke-thickness-focus: 3px;
+	--stroke-thickness-input-icon: 2px;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-md: 1rem;
+	--text-lg: 1.25rem;
+	--text-xl: 2.5rem;
+
+	--radius-input: 0.75em;
+	--radius-card: 1.2rem;
+	--radius-section: 2rem;
+	--radius-full: calc(infinity * 1px);
+}

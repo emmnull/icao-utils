@@ -1,0 +1,104 @@
+.button,
+.button-cta,
+.button-bordered,
+.button-dashed,
+.button-ghost,
+.button-link {
+	position: relative;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	text-overflow: ellipsis;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+	min-width: fit-content;
+	transition-property: all;
+	text-decoration: none;
+	border: none;
+	transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+	outline-offset: -2px;
+	outline-width: 2px;
+	outline-style: solid;
+	outline-color: transparent;
+	min-height: var(--spacing-input-size);
+	padding-inline: var(--spacing-input-padding-inline);
+	padding-block: var(--spacing-input-padding-block);
+	border-radius: var(--radius-input);
+	color: var(--color-input-foreground);
+	background: var(--color-input-background);
+
+	&.button-square {
+		aspect-ratio: 1;
+		width: var(--spacing-input-size);
+		padding-inline: 0;
+	}
+}
+
+.button {
+	&:hover {
+		background: color-mix(in srgb, var(--color-input-background), var(--color-foreground) 10%);
+	}
+
+	&:is(:disabled, [aria-disabled='true']) {
+		opacity: 0.5;
+	}
+
+	&:is([data-loading='true'], [aria-busy='true']) {
+	}
+
+	&:is([data-error='true'], [aria-invalid], :user-invalid) {
+		background: red;
+	}
+
+	&:is([data-success='true'], [aria-valid], :user-valid) {
+	}
+}
+
+.button-cta {
+}
+
+.button-bordered,
+.button-dashed {
+	background: transparent;
+
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		border-width: 1px;
+		border-color: color-mix(in srgb, currentcolor 20%, transparent);
+		border-style: solid;
+		transition: inherit;
+	}
+
+	&:hover {
+		background: color-mix(in srgb, var(--color-input-background), var(--color-foreground) 10%);
+
+		&::after {
+			border-color: transparent;
+		}
+	}
+}
+
+.button-dashed {
+	&::after {
+		border-style: dashed;
+	}
+}
+
+.button-link {
+	background: transparent;
+	font-weight: 500;
+	color: color-mix(in srgb, var(--color-primary) 80%, var(--color-background));
+
+	&:hover {
+		color: var(--color-primary);
+		background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+	}
+
+	&:is(:target, [aria-selected], [aria-current]:not([aria-current='false'])) {
+		color: color-mix(in srgb, var(--color-primary) 80%, var(--color-foreground));
+		background: color-mix(in srgb, var(--color-primary) 20%, transparent);
+	}
+}

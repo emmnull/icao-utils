@@ -1,0 +1,28 @@
+.input,
+.input-bordered,
+.input-dashed,
+.input-ghost {
+	color: var(--button-color);
+	background: var(--button-background);
+	border-color: var(--button-border-color);
+	border-style: var(--button-border-style);
+	padding-inline: var(--button-padding);
+	height: var(--spacing-io);
+	gap: calc(0.25 * var(--spacing-io));
+	padding-block: var(--spacing-io-nesting);
+	border-radius: var(--radius-io);
+	border-width: var(--border-width-io);
+	outline-color: oklch(from var(--color-io-cta) calc(l * 1.25) c h);
+	transition-duration: var(--default-transition-duration);
+	transition-timing-function: var(--default-transition-timing-function);
+	position: relative;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-overflow: ellipsis;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+	min-width: fit-content;
+	transition-property: all;
+}

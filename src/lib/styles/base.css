@@ -1,0 +1,16 @@
+:root,
+:host {
+	background: var(--color-background);
+	color: var(--color-foreground);
+	font-family: var(--font-main);
+	font-optical-sizing: auto;
+	font-weight: 400;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+	width: 100%;
+}

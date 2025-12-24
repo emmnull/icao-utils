@@ -1,0 +1,8 @@
+Model Information:
+* title:	British Aerospace 146
+* source:	https://sketchfab.com/3d-models/british-aerospace-146-8ea4b2716a314fb6ad1aee15c0bd1922
+* author:	helijah (https://sketchfab.com/helijah)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

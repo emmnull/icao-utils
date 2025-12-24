@@ -1,12 +1,15 @@
 <script lang="ts">
-	let { value = $bindable() }: { value: number } = $props();
+	let { value = $bindable(0) }: { value?: number } = $props();
 </script>
 
-<div>
-	<button onclick={() => value--}> - </button>
-	<span>{value}</span>
-	<button onclick={() => value++}> + </button>
-</div>
+<fieldset>
+	<button onclick={() => value--} class="button"> - </button>
+	<input class="input" type="number" bind:value />
+	<button onclick={() => value++} class="button"> + </button>
+</fieldset>
 
 <style>
+	@import '$lib/styles/theme.css';
+	@import '$lib/styles/button.css';
+	@import '$lib/styles/input.css';
 </style>
