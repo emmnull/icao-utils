@@ -1,9 +1,13 @@
 # ICAO utils
 
+## UI
+
+Primitive styles and components.
+
+## Tools
+
+Helper tools.
+
 ## Widgets
 
-[W3C Packaged Web Apps (Widgets)](https://www.w3.org/TR/widgets/)
-
-## Design system
-
-To do
+Composed components exported as micro-frontends for use across various third parties. [W3C Packaged Web Apps (Widgets)](https://www.w3.org/TR/widgets/).
