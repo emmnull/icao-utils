@@ -31,6 +31,12 @@
 				QR Code
 			</a>
 		</nav>
+		<nav>
+			<h2>Views</h2>
+			<a href={resolve('/views/sample')} class="button-link" style="justify-content: start;">
+				QR Code
+			</a>
+		</nav>
 	</aside>
 	<article>
 		{@render children()}
@@ -40,7 +46,7 @@
 <style>
 	main {
 		display: flex;
-		background: var(--color-background);
+		flex-grow: 1;
 	}
 
 	aside {
@@ -69,5 +75,7 @@
 
 	article {
 		padding: 2rem;
+		flex: 1;
+		min-height: 100%;
 	}
 </style>

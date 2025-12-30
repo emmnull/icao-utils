@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
 
-const md = '.md';
+const MD_EXT = '.md';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,7 +10,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		mdsvex({
-			extension: md
+			extension: MD_EXT
 		}),
 		vitePreprocess()
 	],
@@ -30,7 +30,7 @@ const config = {
 			async: true
 		}
 	},
-	extensions: ['.svelte', md]
+	extensions: ['.svelte', MD_EXT]
 };
 
 export default config;

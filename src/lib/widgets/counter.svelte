@@ -1,3 +1,5 @@
+<svelte:options customElement="icao-counter" />
+
 <script lang="ts">
 	let { value = $bindable(0) }: { value?: number } = $props();
 </script>

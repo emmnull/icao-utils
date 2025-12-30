@@ -12,7 +12,6 @@
 	justify-content: center;
 	z-index: 0;
 	min-width: fit-content;
-	transition-property: all;
 	text-decoration: none;
 	border: none;
 	transition: all 0.25s cubic-bezier(0, 0, 0, 1);

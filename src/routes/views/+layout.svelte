@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import QrCode from '$lib/components/qr-code.svelte';
 	import { toDataURL, toString } from 'qrcode';
 	import type { Snippet } from 'svelte';
 
@@ -25,7 +24,7 @@
 	{@render children()}
 </div>
 
-{#if showMenu}
+<!-- {#if showMenu}
 	<menu>
 		<button class="button" onclick={() => (showMenu = false)}>x</button>
 		<section>
@@ -37,7 +36,7 @@
 	<div class="toolbar">
 		<button class="button" onclick={() => (showMenu = !showMenu)}>+</button>
 	</div>
-{/if}
+{/if} -->
 
 <style>
 	:global(:root body) {

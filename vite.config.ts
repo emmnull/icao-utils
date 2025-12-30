@@ -1,12 +1,13 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { playwright } from '@vitest/browser-playwright';
+import { threeMinifier } from '@yushijinhun/three-minifier-rollup';
 import { defineConfig } from 'vitest/config';
 
 const WIDGETS_DIR = './src/lib/widgets';
 
 export default defineConfig({
 	plugins: [
-		// { ...threeMinifier(), enforce: 'pre' }
+		{ ...threeMinifier(), enforce: 'pre' },
 		sveltekit()
 		// { name: 'zip-widgets', async closeBundle(error) {} }
 	],

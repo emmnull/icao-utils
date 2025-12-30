@@ -1,9 +1,29 @@
-.input-group {
+.input-group,
+.input-group-bordered,
+.input-group-dashed,
+.input-group-ghost {
 	display: flex;
+	position: relative;
 	gap: var(--spacing-input-group-gap);
 	border-radius: var(--radius-input);
 
 	&[data-orientation='vertical'] {
 		flex-direction: column;
+	}
+
+	.input-peer {
+	}
+
+	.input {
+	}
+
+	.input-prefix {
+	}
+
+	.input-suffix {
+	}
+
+	& > [data-icon],
+	.input-icon {
 	}
 }
