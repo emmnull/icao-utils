@@ -34,7 +34,7 @@
 		<nav>
 			<h2>Views</h2>
 			<a href={resolve('/views/sample')} class="button-link" style="justify-content: start;">
-				QR Code
+				Sample model
 			</a>
 		</nav>
 	</aside>
